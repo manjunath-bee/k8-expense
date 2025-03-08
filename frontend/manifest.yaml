@@ -18,6 +18,8 @@ spec:
       containers:
       - name: frontend
         image: manjudbadevops/frontend:1.0.0
+        ports:
+        - containerPort: 8080
 
 ---
 
