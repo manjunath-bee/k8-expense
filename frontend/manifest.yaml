@@ -26,11 +26,12 @@ kind: Service
 metadata:
   name: frontend
   namespace: expense
-spec:
+spec: 
+  type: LoadBalancer
   selector:
     app: frontend
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: 8080
 
